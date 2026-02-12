@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <!-- Metallic gradient -->
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"></stop>
+      <stop offset="40%" stop-color="#cccccc"></stop>
+      <stop offset="70%" stop-color="#888888"></stop>
+      <stop offset="100%" stop-color="#222222"></stop>
+    </linearGradient>
+
+    <!-- Red glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="300" fill="#000000"></rect>
+
+  <!-- Lightning slashes -->
+  <polygon points="80,20 110,20 70,120 120,120 60,260" fill="#ff0000" opacity="0.8"></polygon>
+  <polygon points="520,20 490,20 530,120 480,120 540,260" fill="#ff0000" opacity="0.8"></polygon>
+
+  <!-- Mastiff head -->
+  <ellipse cx="300" cy="140" rx="95" ry="75" fill="#444"></ellipse>
+  <ellipse cx="240" cy="90" rx="30" ry="40" fill="#333"></ellipse>
+  <ellipse cx="360" cy="90" rx="30" ry="40" fill="#333"></ellipse>
+
+  <!-- Eyes -->
+  <rect x="265" y="135" width="15" height="6" fill="#ff0000"></rect>
+  <rect x="320" y="135" width="15" height="6" fill="#ff0000"></rect>
+
+  <!-- Nose -->
+  <polygon points="300,165 285,185 315,185" fill="#000"></polygon>
+
+  <!-- Text -->
+  <text x="300" y="260" text-anchor="middle" font-size="42" font-family="Impact, Arial Black, sans-serif" fill="url(#steel)" stroke="#ff0000" stroke-width="2" filter="url(#glow)">
+    MASTIFF CARD CLUB
+  </text>
+</svg>
