@@ -1,0 +1,127 @@
+/* ===== GLOBAL ===== */
+body {
+  max-width: 1000px;
+  margin: auto;
+  background: linear-gradient(to bottom, #999999 0%, #000000 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+  border: 3px solid red;
+  background-color: white;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-image: url('images/marvel.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 25%;
+}
+
+/* REMOVE HEADER IMAGE ON RESUME PAGE */
+.resume-page header {
+  background-image: none;
+  padding-top: 0;
+}
+
+/* ===== NAV ===== */
+nav {
+  text-align: center;
+  margin: 20px 0;
+  background-color: #777;
+  padding: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.selected {
+  font-weight: bold;
+}
+
+/* ===== MAIN ===== */
+main {
+  background: linear-gradient(to bottom, #ffffff 0%, #cce6ff 100%);
+  padding: 30px;
+  text-align: center;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: yellow;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ===== HOME ===== */
+.important {
+  color: red;
+  font-weight: bold;
+  font-family: Impact, Arial Black, sans-serif;
+}
+
+.logo {
+  max-width: 300px;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+}
+
+.logo-small {
+  max-width: 250px;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+}
+
+.divider {
+  background-color: red;
+  width: 50%;
+  height: 4px;
+  border: none;
+  margin: 30px auto;
+}
+
+/* ===== RESUME ===== */
+.resume-wrapper {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.resume-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.resume-header p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 30px;
+}
+
+.section-title {
+  color: #6da36d;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: right;
+}
+
+.section-content ul {
+  padding-left: 18px;
+}
